@@ -1,0 +1,65 @@
+{
+  "status": "completed_2021_data",
+  "n_regions": 77,
+  "n_raw_geographies": 84,
+  "excluded_missing": 0,
+  "excluded_unmapped_or_unmatched": 7,
+  "excluded_region_names": [
+    "Ненецкий АО",
+    "Москва",
+    "Ханты-Мансийский АО — Югра",
+    "Чукотский АО",
+    "Санкт-Петербург",
+    "Ямало-Ненецкий АО",
+    "Еврейская АО"
+  ],
+  "bridge_edges": [],
+  "best_method": "KMeans",
+  "best_k": 3,
+  "best_silhouette": 0.42636219364931627,
+  "best_stability_ARI": 0.9721458737191913,
+  "selected_cluster_counts": {
+    "0": 10,
+    "1": 57,
+    "2": 10
+  },
+  "moran": [
+    {
+      "variable": "urban_share",
+      "indicator_code": "01030000",
+      "Moran_I": 0.4600640989348454,
+      "permutation_p": 0.0025,
+      "local_FDR05_n": 0
+    },
+    {
+      "variable": "natural_change",
+      "indicator_code": "01140000",
+      "Moran_I": 0.5540553626331604,
+      "permutation_p": 0.0025,
+      "local_FDR05_n": 0
+    },
+    {
+      "variable": "migration_change",
+      "indicator_code": "01200000",
+      "Moran_I": 0.06321825195103935,
+      "permutation_p": 0.205,
+      "local_FDR05_n": 0
+    },
+    {
+      "variable": "fertility",
+      "indicator_code": "01150000",
+      "Moran_I": 0.37405609114679145,
+      "permutation_p": 0.0025,
+      "local_FDR05_n": 0
+    }
+  ],
+  "features": {
+    "01030000": "Доля городского населения, %",
+    "01140000": "Естественный прирост, ‰",
+    "01200000": "Миграционный прирост, ‰",
+    "01150000": "Суммарный коэффициент рождаемости"
+  },
+  "geometry_source": "https://github.com/imsha/russia_geojson_regions_2021",
+  "statistics_source": "https://github.com/tochno-st/regions_collection",
+  "processing_s": 9.9
+}

@@ -1,0 +1,58 @@
+{
+  "status": "synthetic_demo_not_real_data",
+  "n_regions": 48,
+  "n_raw_geographies": 48,
+  "excluded_missing": 0,
+  "excluded_unmapped_or_unmatched": 0,
+  "excluded_region_names": [],
+  "bridge_edges": [],
+  "best_method": "Spatial Ward",
+  "best_k": 4,
+  "best_silhouette": 0.1931917685326384,
+  "best_stability_ARI": 0.9263491981961136,
+  "selected_cluster_counts": {
+    "0": 13,
+    "1": 11,
+    "2": 10,
+    "3": 14
+  },
+  "moran": [
+    {
+      "variable": "urban_share",
+      "indicator_code": "01030000",
+      "Moran_I": 0.4457933406290384,
+      "permutation_p": 0.0025,
+      "local_FDR05_n": 0
+    },
+    {
+      "variable": "natural_change",
+      "indicator_code": "01140000",
+      "Moran_I": 0.5614146285858863,
+      "permutation_p": 0.0025,
+      "local_FDR05_n": 0
+    },
+    {
+      "variable": "migration_change",
+      "indicator_code": "01200000",
+      "Moran_I": 0.5903378464783691,
+      "permutation_p": 0.0025,
+      "local_FDR05_n": 3
+    },
+    {
+      "variable": "fertility",
+      "indicator_code": "01150000",
+      "Moran_I": 0.3676567099028202,
+      "permutation_p": 0.0025,
+      "local_FDR05_n": 0
+    }
+  ],
+  "features": {
+    "01030000": "Доля городского населения, %",
+    "01140000": "Естественный прирост, ‰",
+    "01200000": "Миграционный прирост, ‰",
+    "01150000": "Суммарный коэффициент рождаемости"
+  },
+  "geometry_source": "https://github.com/imsha/russia_geojson_regions_2021",
+  "statistics_source": "https://github.com/tochno-st/regions_collection",
+  "processing_s": 2.9
+}

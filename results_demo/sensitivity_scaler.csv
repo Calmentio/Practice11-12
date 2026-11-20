@@ -1,0 +1,4 @@
+﻿method,k,standard_vs_robust_ARI
+KMeans,3,1.0
+Spatial Ward,4,1.0
+MST spatial,4,0.9194331752471288
